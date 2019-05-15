@@ -16,17 +16,12 @@ body, html {
   padding: 0;
 }
 
-header {
-  position: fixed;
-  z-index: -9999;
-}
-
 .wrap {
   position: relative;
 }
 
 .wrap #brochure {
-  width: 80%;
+  width: 100vw;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
