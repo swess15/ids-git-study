@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Black+Han+Sans|Nanum+Gothic");
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  z-index: -9999;
+}
+
+.wrap {
+  position: relative;
+}
+
+.wrap #brochure {
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+footer {
+  width: 100vw;
+  height: 6vh;
+  position: fixed;
+  bottom: 0;
+  background-image: url("./bg.png");
+  background-size: cover;
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 600;
+  line-height: 6vh;
+  text-align: center;
+  cursor: pointer;
+}
+
+footer span:hover {
+  -webkit-animation-name: 'animation';
+          animation-name: 'animation';
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#back-top {
+  position: fixed;
+  bottom: 40px;
+  right: 7px;
+  z-index: 9999;
+}
+
+#back-top img {
+  width: 5vw;
+}
+
+ul {
+  position: fixed;
+  bottom: 40px;
+  left: 20px;
+  text-align: right;
+  font-size: 2vw;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+ul li {
+  margin: 10px 0;
+  padding: 5px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.39);
+  border-radius: 5px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Nanum+Gothic');
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    z-index: -9999;
+}
+
+.wrap {
+    position: relative;
+
+    #brochure {
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+footer {
+    width: 100vw;
+    height: 6vh;
+    position: fixed;
+    bottom: 0;
+    background-image: url('./bg.png');
+    background-size: cover;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 600;
+    line-height: 6vh;
+    text-align: center;
+    cursor: pointer;
+
+
+    span:hover {
+        animation-name: 'animation';
+        animation-duration: 4s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+    
+}
+
+#back-top {
+	position: fixed;
+	bottom: 40px;
+    right: 7px;
+    z-index: 9999;
+    
+    img {
+        width: 5vw;
+    }
+}
+
+
+    
+ul {
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+    text-align: right;
+    font-size: 2vw;
+    font-family: 'Black Han Sans', sans-serif;
+
+    li {
+        margin: 10px 0;
+        padding: 5px;
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.39);
+        border-radius: 5px;
+    }
+}
